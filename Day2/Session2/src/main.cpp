@@ -15,14 +15,25 @@
 
 #include<Arduino.h>
 
+bool isOn = true;
+
 void setup(){
 pinMode(3, OUTPUT);
-digitalWrite(3, HIGH);    
+pinMode(9, INPUT);
+pinMode(10, INPUT);
+pinMode(11, INPUT);
+
+
 }
 
 void loop(){
+int pinState = digitalRead(9);
+if (pinState == HIGH);
+{digitalWrite(3, HIGH);
+delay(50);
 digitalWrite(3, LOW);
 delay(50);
-digitalWrite(3, HIGH);
-delay(50);
+}
+
+
 }
