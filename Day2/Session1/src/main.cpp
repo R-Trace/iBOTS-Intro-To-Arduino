@@ -5,7 +5,7 @@
 // [x] The Red LED is turned on.
 // [x] The Green LED is also turned on.
 // [x] The Blue LED is also turned on.
-// [ ] 300 milliseconds after all the LEDs turn on, the Blue LED turns off.
+// [x] 300 milliseconds after all the LEDs turn on, the Blue LED turns off.
 // [ ] The Red LED then turns on and off every second, forever.
 // [ ] The Green LED simultaneously turns on and off every half-second, forever.
 // [ ] The Blue LED is on whenever the Green LED is off, and vice-versa.
@@ -16,13 +16,16 @@
 
 void setup() {
     pinMode(3, OUTPUT);
-    digitalWrite(3, HIGH);
+    digitalWrite(3, HIGH); // RED 
         pinMode(4, OUTPUT);
-    digitalWrite(4, HIGH);
+    digitalWrite(4, HIGH); // Green
         pinMode(5, OUTPUT);
-    digitalWrite(5, HIGH);
+    digitalWrite(5, HIGH); //Blue
 }
 
 void loop() {
+delay(300);
+digitalWrite(5, LOW);
+
 
 }
