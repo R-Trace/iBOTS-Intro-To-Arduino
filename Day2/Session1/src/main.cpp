@@ -6,7 +6,7 @@
 // [x] The Green LED is also turned on.
 // [x] The Blue LED is also turned on.
 // [x] 300 milliseconds after all the LEDs turn on, the Blue LED turns off.
-// [ ] The Red LED then turns on and off every second, forever.
+// [x] The Red LED then turns on and off every second, forever.
 // [ ] The Green LED simultaneously turns on and off every half-second, forever.
 // [ ] The Blue LED is on whenever the Green LED is off, and vice-versa.
 
