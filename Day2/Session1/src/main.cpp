@@ -23,14 +23,28 @@ void setup() {
     digitalWrite(5, HIGH); //Blue
 }
 
+
+
+void light1() {
+    digitalWrite(3, LOW);
+    delay(1000);
+    digitalWrite(3, HIGH);
+
+}
+
+void light2() { 
+    digitalWrite(4, LOW);
+    delay(100);
+    digitalWrite(4, HIGH);
+}
+
+void light3() {
+    delay(300);
+    digitalWrite(5, LOW);
+}
+
 void loop() {
-delay(300);
-digitalWrite(5, LOW);
-
-delay(1000);
-digitalWrite(3, LOW);
-delay(1000);
-digitalWrite(3, HIGH); 
-
-
+ light1();
+ light2();
+ light3(); 
 }
